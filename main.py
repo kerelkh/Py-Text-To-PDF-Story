@@ -14,9 +14,9 @@ for i, file in enumerate(filepath):
     title = filename.capitalize()
 
     pdf.add_page()
-    pdf.set_font("Arial", size=18, style="B")
-    pdf.multi_cell(0, 6, txt=title)
-    pdf.ln(10)
+    pdf.set_font("Arial", size=20, style="B")
+    pdf.cell(0, 6, txt=title, align="C")
+    pdf.ln(20)
 
     pdf.set_font("Arial", size=14)
     pdf.multi_cell(0, 6, txt=data)
